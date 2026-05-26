@@ -37,3 +37,8 @@ This guide is beginner-friendly, but complete beginners may face technical issue
 - توانایی حل خطاهای فنی
 
 این آموزش تا حد ممکن برای افراد تازه‌کار ساده شده، اما ممکن است کاربران مبتدی هنگام راه‌اندازی با چالش‌های فنی روبه‌رو شوند.
+---
+
+## Credits
+
+Some parts of this guide are inspired by moei
