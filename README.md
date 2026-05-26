@@ -1,4 +1,12 @@
-# Node_guide
+## 🚀 Join Our Community
+
+Join our Telegram channel for the latest crypto node & airdrop updates.
+👉 [Airdrop Parvaz Links](https://linktr.ee/airdropparvaz)
+
+---
+برای دریافت جدیدترین آموزش‌های نود و ایردراپ وارد کانال تلگرام ما شوید.
+برای آموزش‌های ویدیویی و راهنماهای کامل، کانال یوتیوب ما را سابسکرایب کنید.
+
 # Linux Node Guide
 
 ## English Guides
