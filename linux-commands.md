@@ -179,3 +179,10 @@ screen -ls
 ```bash
 screen -r <screen-name>
 ```
+# Useful Linux Resources
+
+- [101 Linux Commands Open-source eBook](https://github.com/bobbyiliev/101-linux-commands#basics)
+
+- [Linux Bash Commands Repository](https://github.com/trinib/Linux-Bash-Commands)
+
+- [Important Linux Commands Guide](https://www.digitalocean.com/community/tutorials/linux-commands#the-wget-command-in-linux)
