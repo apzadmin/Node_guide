@@ -175,7 +175,13 @@ screen -ls
 ```
 
 ## بازگشت به Screen
+# منابع مفید برای دستورات لینوکس
 
+- [کتاب متن‌باز ۱۰۱ دستور لینوکس](https://github.com/bobbyiliev/101-linux-commands#basics)
+
+- [مخزن دستورات Bash لینوکس](https://github.com/trinib/Linux-Bash-Commands)
+
+- [راهنمای دستورات مهم لینوکس](https://www.digitalocean.com/community/tutorials/linux-commands#the-wget-command-in-linux)
 ```bash
 screen -r <screen-name>
 ```
