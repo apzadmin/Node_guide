@@ -6,7 +6,7 @@ This guide installs the essential packages and tools required for running crypto
 
 # Update Server Packages
 
-Before installing anything, update your server packages:
+Update your server packages before installing anything.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
@@ -16,15 +16,17 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 # Install Main Packages
 
-These packages are commonly required for crypto nodes and Linux utilities.
+These packages are commonly used for crypto nodes and Linux environments.
 
 ```bash
-sudo apt install curl screen iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev ca-certificates -y
+sudo apt install curl screen iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip ca-certificates -y
 ```
 
 ---
 
 # Install Python3 & Pip
+
+Install Python3 and Pip:
 
 ```bash
 sudo apt install -y python3-pip
@@ -32,7 +34,7 @@ sudo apt install pip
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
 
-Check version:
+Check installed versions:
 
 ```bash
 python3 --version
@@ -43,23 +45,37 @@ pip --version
 
 # Install Go
 
+Remove old Go installation:
+
 ```bash
 sudo rm -rf /usr/local/go
+```
 
+Install Go:
+
+```bash
 curl -L https://go.dev/dl/go1.22.3.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
+```
 
+Add Go to PATH:
+
+```bash
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 
 source .bash_profile
+```
 
+Check Go version:
+
+```bash
 go version
 ```
 
 ---
 
-# Install NodeJS, npm, Yarn
+# Install NodeJS, npm & Yarn
 
-Check current version:
+Check current NodeJS version:
 
 ```bash
 node --version
@@ -67,7 +83,9 @@ node --version
 
 If NodeJS 18 is already installed, skip this section.
 
-Remove old NodeJS files:
+---
+
+## Remove Old NodeJS Files
 
 ```bash
 sudo apt-get remove nodejs
@@ -78,7 +96,9 @@ sudo rm /etc/apt/keyrings/nodesource.gpg
 sudo rm /etc/apt/sources.list.d/nodesource.list
 ```
 
-Install NodeJS 18:
+---
+
+## Install NodeJS 18
 
 ```bash
 sudo apt-get update
@@ -95,14 +115,19 @@ node -v
 npm -v
 ```
 
-Install npm:
+---
+
+## Install npm
 
 ```bash
 sudo apt-get install npm
+
 npm --version
 ```
 
-Install Yarn:
+---
+
+## Install Yarn
 
 ```bash
 curl -sSL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -124,7 +149,9 @@ Remove old Docker packages:
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 
-Install Docker dependencies:
+---
+
+## Install Docker Dependencies
 
 ```bash
 sudo apt-get update
@@ -134,7 +161,9 @@ sudo apt-get install ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings
 ```
 
-Add Docker GPG key:
+---
+
+## Add Docker GPG Key
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -142,7 +171,9 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
-Add Docker repository:
+---
+
+## Add Docker Repository
 
 ```bash
 echo \
@@ -151,7 +182,9 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-Install Docker:
+---
+
+## Install Docker
 
 ```bash
 sudo apt update -y && sudo apt upgrade -y
@@ -159,7 +192,9 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-Test Docker:
+---
+
+## Test Docker
 
 ```bash
 sudo docker run hello-world
@@ -169,13 +204,13 @@ sudo docker run hello-world
 
 # lsof & UFW Commands
 
-Check used ports:
+Check active ports:
 
 ```bash
 lsof -i -P -n | grep LISTEN
 ```
 
-Check process using port 80:
+Check which process is using port 80:
 
 ```bash
 lsof -i :80
@@ -197,7 +232,7 @@ sudo ufw allow 3000
 
 # Install htop
 
-Monitor CPU, RAM, tasks, and system usage.
+Monitor CPU, RAM, tasks, and system resources.
 
 Install:
 
