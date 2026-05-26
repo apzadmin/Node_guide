@@ -41,7 +41,7 @@ mkdir <folder-name> <folder-name2>
 ## Example
 
 ```bash
-mkdir moei
+mkdir shahin
 ```
 
 ---
@@ -65,7 +65,7 @@ cd <directory-path>
 ## Example
 
 ```bash
-cd moei
+cd shahin
 ```
 
 ## Go to parent directory
@@ -131,4 +131,51 @@ Transfer a GitHub repository into your Linux server.
 ## Clone repository
 
 ```bash
-git clone https://github.com/0xmoei/Linux_Node_Gu
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY
+```
+
+## Example
+
+```bash
+git clone https://github.com/shahin/linux-node-guide
+```
+
+---
+
+# screen — Background Sessions
+
+Screen allows processes to continue running after exiting the terminal or VPS session.
+
+Useful for running crypto nodes in the background.
+
+---
+
+## Install Screen
+
+```bash
+sudo apt install screen
+```
+
+## Create a new screen
+
+```bash
+screen -S <screen-name>
+```
+
+## Detach from screen
+
+```text
+CTRL + A + D
+```
+
+## List active screens
+
+```bash
+screen -ls
+```
+
+## Reconnect to a screen
+
+```bash
+screen -r <screen-name>
+```
