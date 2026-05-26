@@ -6,8 +6,15 @@ Join our Telegram channel for the latest crypto node & airdrop updates.
 ---
 برای دریافت جدیدترین آموزش‌های نود و ایردراپ وارد کانال تلگرام ما شوید.
 برای آموزش‌های ویدیویی و راهنماهای کامل، کانال یوتیوب ما را سابسکرایب کنید.
-
 # Linux Node Guide
+
+![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-orange)
+
+![Language](https://img.shields.io/badge/Language-English-red)
+
+![Language](https://img.shields.io/badge/Language-Persian-green)
+
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## English Guides
 
